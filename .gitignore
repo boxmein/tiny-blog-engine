@@ -1,0 +1,5 @@
+# Ignore the node.js module directory
+node_modules
+
+# Ignore the compiled stylesheets - you can generate them with SASS!
+static/*.css

@@ -1,0 +1,57 @@
+// index page CSS
+// sass index.scss static/index.css --trace --no-cache --sourcemap=none
+$color: black;
+$unaccent: darken(invert($color), 25%);
+$accent: #529ECC;
+
+body {
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 5% auto;
+  font-size: .9em;
+}
+
+a {
+  color: $accent; 
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#links {
+  list-style-type: none;
+  li:before { content: '- '; }
+}
+
+#navigation {
+  list-style-type: none;
+  padding: 0;
+  li {
+    display: inline-block; 
+  }
+  li:before {
+    content: '// ';
+    margin-left: 5px;
+  }
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid $unaccent;
+  margin: 0 1.5em;
+}
+
+h1 {
+  font-size: 1.7em;
+  margin-top: 40px;
+}
+
+footer {
+  color: $unaccent;
+}
+
+#afterspace {
+  height: 10em;
+  width: 100%;
+}
